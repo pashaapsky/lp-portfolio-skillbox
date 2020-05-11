@@ -1,0 +1,176 @@
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer-navigation */
+.footer__navigation {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.navigation__item--sm {
+    font-size: 1.2rem;
+
+    margin-bottom: 16px;
+    margin-right: 0;
+}
+
+.navigation__item--grey {
+    color: #8993ad;
+}
+
+.navigation__list-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* contacts */
+.contacts {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contacts__list {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+    margin-bottom: 34px;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__link {
+    font-size: 1.667rem;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #000;
+}
+
+
+.phone {
+    position: relative;
+
+    background: url("../img/footer/phone.png") no-repeat center left;
+    background-size: 18px 18px;
+
+    padding-left: 38px;
+}
+
+.mail {
+    position: relative;
+
+    background: url("../img/footer/mail.png") no-repeat center left;
+    background-size: 23px 15px;
+
+    padding-left: 42px;
+}
+
+.phone:after, .mail:after {
+    background-color: #ff6e7a;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0;
+    left:50%;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+}
+
+.phone:hover:after,
+.phone:focus:after, .mail:hover:after, .mail:focus:after {
+    width: 100%;
+}
+
+
+/* social-links */
+.social-links {
+    width: 100%;
+    max-width: 270px;
+}
+
+.social-links__list {
+    display: flex;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links__link {
+    align-self: flex-end;
+}
+
+.social-links__link:hover {
+    opacity: 0.5;
+}
+
+.social-links__item {
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.social-links__btn {
+    margin-bottom: 30px;
+}
+
+.social-links__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    fill: #b2b9ca;
+    transition: fill 0.5s linear;
+}
+
+
+#vkontakte {
+    width: 35px;
+    height: 21px;
+}
+
+#facebook {
+    width: 16px;
+    height: 28px;
+}
+
+#twitter {
+    width: 29px;
+    height: 25px;
+}
+
+#instagram {
+    width: 25px;
+    height: 25px;
+}
+
+/* copyright */
+.copyright {
+    text-align: center;
+
+    font-size: 1.067rem;
+    font-weight: 400;
+    color: #fff;
+
+    padding: 30px 0;
+    margin: 82px 0 0;
+
+    background-color: #31293c;
+}
+
+

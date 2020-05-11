@@ -1,0 +1,168 @@
+/* modals */
+.modals {
+    display: none;
+    opacity: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(15,15,15,0.8);
+
+    z-index: 1000;
+}
+
+/*  order-call заказать звонок */
+.order-call {
+    position: relative;
+
+    width: 100%;
+    max-width: 1024px;
+    height: 440px;
+
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: auto;
+    padding: 20px;
+
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(242,101,34,1) 0%, rgba(250,8,145,1) 99%);
+}
+
+.order-call__form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    width: 100%;
+
+    border: 1px solid black;
+    background-color: #fff0fb4f;
+
+    padding: 10px 10px;
+}
+
+.order-call__header {
+    font-size: 3rem;
+
+    color: black;
+    background: transparent;
+
+    margin: 0 0 10px;
+}
+
+.order-call__label {
+    font-size: 2rem;
+}
+
+.order-call__input {
+    width: 100%;
+    max-width: 680px;
+
+    height: 50px;
+
+    border: 1px solid orange;
+
+    margin: 12px 1px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    width: 3rem;
+    height: 3rem;
+
+    background: url(../img/modals/close-btn.png) no-repeat;
+    background-size: contain;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s linear;
+}
+
+.close-btn:hover{
+    background-color: #ef92e8;
+}
+
+.order-call__btn {
+    width: 50%;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-top: auto;
+    border: 1px solid black;
+}
+
+.user-name {
+    background: white url(../img/modals/user.png) no-repeat 10px 10px;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+.user-phone {
+    background: white url(../img/modals/phone.png) no-repeat 6px 10px;
+    background-size: 30px;
+    padding-left: 45px;
+}
+
+/* order-success */
+.order-success {
+    position: relative;
+    width: 90%;
+    max-width: 768px;
+    height: 230px;
+
+    display: none;
+    flex-direction: column;
+
+    opacity: 0;
+
+    margin: auto;
+    padding: 12px;
+
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(242,101,34,1) 0%, rgba(250,8,145,1) 99%);
+}
+
+.order-success__header {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin: 0 auto;
+
+    background: url(../img/modals/order-success.png) center right no-repeat;
+    background-size: contain;
+}
+
+.order-success__paragraph {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+
+    margin: 10px auto;
+    padding: 20px;
+
+    border: 1px solid black;
+}
+
+.close-btn--order-success {
+    right: 0;
+    left: 10px;
+
+    width: 65px;
+    height: 65px;
+}
+
+

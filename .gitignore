@@ -38,6 +38,7 @@ Thumbs.db
 
 # project-files #
 project-files
+portfolio-gulp-build
 composer.phar
 node_modules
 composer.json

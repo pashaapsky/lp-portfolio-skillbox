@@ -1,4 +1,4 @@
-const project_folder = require("path").basename(__dirname) + '-build';
+const project_folder = "docs";
 const source_folder = "src";
 
 const path = {
